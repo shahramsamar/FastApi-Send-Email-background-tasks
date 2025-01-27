@@ -35,7 +35,24 @@ class EmailSettings(BaseSettings):
 email_settings = EmailSettings()
 
 # FastAPI app instance
-app=FastAPI(title="Sending Email By FastAPI")
+app = FastAPI(
+    title="FastApi Send email by BackgroundTasks",
+    description="send email by BackgroundTasks",
+    version="0.0.1",
+    terms_of_service="https://example.com/terms",
+    contact={
+        "name": "Shahram Samar",
+        "url": "https://shahramsamar.github.io/",
+        "email": "shahramsamar2010@gmail.com",
+    },
+    license_info={
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT",
+    },
+  
+)
+
+
 
 
 # Endpoint to send emails
